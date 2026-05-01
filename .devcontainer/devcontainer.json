@@ -1,0 +1,11 @@
+{
+  "name": "IIC OSIC Devcontainer",
+  "image": "ghcr.io/iic-jku/iic-osic-tools-devcontainer:latest",
+  "forwardPorts": [80],
+  "portsAttributes": {
+    "80": { "label": "noVNC", "onAutoForward": "notify" }
+  },
+  "remoteUser": "root",
+  "runArgs": ["--shm-size=1g"],
+  "postStartCommand": "/startup.sh > /tmp/vnc.log 2>&1 &"
+}
