@@ -13,7 +13,5 @@
     "memory": "8gb",
     "storage": "32gb"
   },
-  "remoteUser": "root",
-  "workspaceFolder": "/foss/designs",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/foss/designs,type=bind"
+  "remoteUser": "root"
 }
